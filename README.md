@@ -45,27 +45,27 @@ Preprocessing Steps:
  Metrics: mAP@0.5, mAP@0.5:0.95, Precision, Recall, FPS (realtime capability).
  Visualization: Detection overlays, heatmaps of anchor responses, segmentation contours.
 
-# Architecture (Textual Diagram)
-
- ┌──────────────────────────────────────────────┐
- │               Input Image                    │
- └─────────────────┬────────────────────────────┘
-                   │
-        ┌──────────▼──────────┐
-        │  Backbone (ResNet/ CSPDarknet) │
-        └──────────┬──────────┘
-                   │
-        ┌──────────▼──────────┐
-        │  Feature Pyramid (FPN + PAN)  │
-        └──────────┬──────────┘
-                   │
-     ┌─────────────▼─────────────┐
-     │ Detection Head (YOLO/SSD) │
-     └─────────────┬─────────────┘
-                   │
-     ┌─────────────▼─────────────┐
-     │ Segmentation Head (Mask RCNN) │
-     └───────────────────────────────┘
+Architecture (Textual Diagram)
+    
+     ┌──────────────────────────────────────────────┐
+     │               Input Image                    │
+     └─────────────────┬────────────────────────────┘
+                       │
+            ┌──────────▼──────────┐
+            │  Backbone (ResNet/ CSPDarknet) │
+            └──────────┬──────────┘
+                       │
+            ┌──────────▼──────────┐
+            │  Feature Pyramid (FPN + PAN)  │
+            └──────────┬──────────┘
+                       │
+         ┌─────────────▼─────────────┐
+         │ Detection Head (YOLO/SSD) │
+         └─────────────┬─────────────┘
+                       │
+         ┌─────────────▼─────────────┐
+         │ Segmentation Head (Mask RCNN) │
+         └───────────────────────────────┘
 
 # Results
 | Model         | mAP@0.5 | Precision | Recall | FPS (RTX 3090) |
