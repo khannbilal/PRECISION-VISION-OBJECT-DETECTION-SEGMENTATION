@@ -46,6 +46,7 @@ Preprocessing Steps:
  Visualization: Detection overlays, heatmaps of anchor responses, segmentation contours.
 
 # Architecture (Textual Diagram)
+
  ┌──────────────────────────────────────────────┐
  │               Input Image                    │
  └─────────────────┬────────────────────────────┘
