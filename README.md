@@ -45,7 +45,7 @@ Preprocessing Steps:
  Metrics: mAP@0.5, mAP@0.5:0.95, Precision, Recall, FPS (realtime capability).
  Visualization: Detection overlays, heatmaps of anchor responses, segmentation contours.
 
-Architecture (Textual Diagram)
+# Architecture (Textual Diagram)
     
      ┌──────────────────────────────────────────────┐
      │               Input Image                    │
